@@ -13582,3 +13582,1771 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.3ms | Allocations: 11620)
 
 
+Started GET "/" for 10.240.4.70 at 2023-10-06 17:57:13 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 182)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 816)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4111)
+Completed 200 OK in 43ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 8448)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 17:57:15 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 213)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2042)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2294)
+
+
+Started GET "/about" for 10.240.4.70 at 2023-10-06 17:57:16 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 91)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 213)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1098)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1410)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 17:57:17 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 213)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1005)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1256)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 17:57:18 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 44.6ms | Allocations: 14536)
+  Rendered posts/index.html.erb within layouts/application (Duration: 67.0ms | Allocations: 25665)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 193)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 26682)
+Completed 200 OK in 92ms (Views: 68.7ms | ActiveRecord: 1.1ms | Allocations: 30706)
+
+
+Started GET "/posts/2" for 10.240.4.70 at 2023-10-06 17:57:19 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.3ms | Allocations: 555)
+  Rendered comments/_form.html.erb (Duration: 1.1ms | Allocations: 1566)
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2938)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3030)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.4ms | Allocations: 8927)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x0000000000d750>):
+    1: <%= form_with(model: [post, comment]) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.4.70 at 2023-10-06 17:57:45 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 6.2ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.6ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 8514)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 8607)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 5.2ms | Allocations: 18838)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000012ef8>):
+    1: <%= form_with(model: [post, comment]) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.0.113 at 2023-10-06 17:59:11 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 5.4ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.8ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 8512)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 8605)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.3ms | Allocations: 18823)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000018678>):
+    1: <%= form_with(model: [post, comment]) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.4.70 at 2023-10-06 18:00:28 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 5.2ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.5ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 8514)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 8607)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.6ms | Allocations: 18825)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x0000000001de20>):
+    1: <%= form_with(model: [post, comment]) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.4.70 at 2023-10-06 18:01:38 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 5.7ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.9ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 8514)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 8607)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.3ms | Allocations: 18823)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000023618>):
+    1: <%= form_with(model: [post, comment]) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.2.100 at 2023-10-06 18:03:14 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 5.8ms | Allocations: 6440)
+  Rendered comments/_form.html.erb (Duration: 0.5ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 8523)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 8616)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.5ms | Allocations: 18839)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000028e10>):
+    1: <%= form_with(model: [post, comment]) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.2.100 at 2023-10-06 18:03:26 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 6.1ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.7ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 8514)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 8607)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.4ms | Allocations: 18852)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x0000000002e630>):
+    1: <%= form_with(model: [post, comment]) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.2.100 at 2023-10-06 18:03:35 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 21.1ms | Allocations: 12205)
+  Rendered comments/_form.html.erb (Duration: 1.1ms | Allocations: 1513)
+  Rendered posts/show.html.erb within layouts/application (Duration: 27.8ms | Allocations: 16199)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 16317)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 1.4ms | Allocations: 41721)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x0000000000d458>):
+    1: <%= form_with(model: [post, comment]) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.2.100 at 2023-10-06 18:04:16 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 6.5ms | Allocations: 6451)
+  Rendered comments/_form.html.erb (Duration: 0.5ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 9.0ms | Allocations: 8534)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 8627)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.6ms | Allocations: 18856)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000012c78>):
+    1: <%= form_with(model: [post, comment] ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.2.100 at 2023-10-06 18:04:40 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 11.1ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.8ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 14.5ms | Allocations: 8512)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8605)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 5.4ms | Allocations: 18858)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x000000000183f8>):
+    1: <%= form_with(model: comment ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/2" for 10.240.2.100 at 2023-10-06 18:04:47 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 5.2ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 8.3ms | Allocations: 1856)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 2]]
+  ↳ app/views/posts/show.html.erb:14
+  Rendered comments/_comment.html.erb (Duration: 1.0ms | Allocations: 1873)
+  Rendered posts/show.html.erb within layouts/application (Duration: 24.9ms | Allocations: 15407)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 15500)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.3ms | Allocations: 25751)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    1: <div class="comment-<%= comment.id %> container" style="border: 1px solid black; padding: 1em; margin: 1em;">
+    2:     <%= comment.user.email %> <br />
+    3:     <% if (comment.updated_at - comment.created_at) > 1 %>
+    4:         <span>Edited <%= time_ago_in_words(comment.updated_at) %> ago</span>
+    5:     <% else %>
+  
+app/views/comments/_comment.html.erb:2
+app/views/posts/show.html.erb:15
+app/views/posts/show.html.erb:14
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "action_text_rich_texts"[0m
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE "action_text_rich_texts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "body" text, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_text_rich_texts_uniqueness" ON "action_text_rich_texts" ("record_type", "record_id", "name")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar, "created_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_variant_records"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" bigint NOT NULL, "variation_digest" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "views" integer DEFAULT 0, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_posts_on_user_id" ON "posts" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "views" integer DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aactive_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aactive_storage_attachments_uniqueness" ON "aactive_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aactive_storage_attachments_on_blob_id" ON "aactive_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aactive_storage_attachments" ("id","name","record_type","record_id","blob_id","created_at")
+                     SELECT "id","name","record_type","record_id","blob_id","created_at" FROM "active_storage_attachments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "active_storage_attachments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("id","name","record_type","record_id","blob_id","created_at")
+                     SELECT "id","name","record_type","record_id","blob_id","created_at" FROM "aactive_storage_attachments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aactive_storage_attachments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aactive_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" bigint NOT NULL, "variation_digest" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aactive_storage_variant_records_uniqueness" ON "aactive_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aactive_storage_variant_records" ("id","blob_id","variation_digest")
+                     SELECT "id","blob_id","variation_digest" FROM "active_storage_variant_records"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "active_storage_variant_records"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" bigint NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "active_storage_variant_records" ("id","blob_id","variation_digest")
+                     SELECT "id","blob_id","variation_digest" FROM "aactive_storage_variant_records"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aactive_storage_variant_records"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_post_id" ON "acomments" ("post_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "acomments" ("id","post_id","user_id","created_at","updated_at")
+                     SELECT "id","post_id","user_id","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("id","post_id","user_id","created_at","updated_at")
+                     SELECT "id","post_id","user_id","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_post_id" ON "acomments" ("post_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acomments" ("id","post_id","user_id","created_at","updated_at")
+                     SELECT "id","post_id","user_id","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("id","post_id","user_id","created_at","updated_at")
+                     SELECT "id","post_id","user_id","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar DEFAULT NULL, "body" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "views" integer DEFAULT 0, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_user_id" ON "aposts" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aposts" ("id","title","body","created_at","updated_at","views","user_id")
+                     SELECT "id","title","body","created_at","updated_at","views","user_id" FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar DEFAULT NULL, "body" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "views" integer DEFAULT 0, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_posts_on_user_id" ON "posts" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "posts" ("id","title","body","created_at","updated_at","views","user_id")
+                     SELECT "id","title","body","created_at","updated_at","views","user_id" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20231006093815)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20231006093814),
+(20231006093724),
+(20231006085223),
+(20231006074214),
+(20231006072629),
+(20231006065032),
+(20231006061929),
+(20231005185930);[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2023-10-06 18:05:01.883003', '2023-10-06 18:05:01.883007') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'e239f7c598ae10a814c2509b7ca5a7687322a1c6', '2023-10-06 18:05:01.887442', '2023-10-06 18:05:01.887445') RETURNING "key"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "action_text_rich_texts"[0m
+  [1m[35m (15.8ms)[0m  [1m[35mCREATE TABLE "action_text_rich_texts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "body" text, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_text_rich_texts_uniqueness" ON "action_text_rich_texts" ("record_type", "record_id", "name")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar, "created_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_variant_records"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" bigint NOT NULL, "variation_digest" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "posts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "views" integer DEFAULT 0, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_posts_on_user_id" ON "posts" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar, "views" integer DEFAULT 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aactive_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aactive_storage_attachments_uniqueness" ON "aactive_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aactive_storage_attachments_on_blob_id" ON "aactive_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aactive_storage_attachments" ("id","name","record_type","record_id","blob_id","created_at")
+                     SELECT "id","name","record_type","record_id","blob_id","created_at" FROM "active_storage_attachments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "active_storage_attachments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("id","name","record_type","record_id","blob_id","created_at")
+                     SELECT "id","name","record_type","record_id","blob_id","created_at" FROM "aactive_storage_attachments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aactive_storage_attachments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aactive_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" bigint NOT NULL, "variation_digest" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aactive_storage_variant_records_uniqueness" ON "aactive_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aactive_storage_variant_records" ("id","blob_id","variation_digest")
+                     SELECT "id","blob_id","variation_digest" FROM "active_storage_variant_records"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "active_storage_variant_records"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" bigint NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "active_storage_variant_records" ("id","blob_id","variation_digest")
+                     SELECT "id","blob_id","variation_digest" FROM "aactive_storage_variant_records"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aactive_storage_variant_records"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_post_id" ON "acomments" ("post_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acomments" ("id","post_id","user_id","created_at","updated_at")
+                     SELECT "id","post_id","user_id","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("id","post_id","user_id","created_at","updated_at")
+                     SELECT "id","post_id","user_id","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acomments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_user_id" ON "acomments" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_acomments_on_post_id" ON "acomments" ("post_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "acomments" ("id","post_id","user_id","created_at","updated_at")
+                     SELECT "id","post_id","user_id","created_at","updated_at" FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("id","post_id","user_id","created_at","updated_at")
+                     SELECT "id","post_id","user_id","created_at","updated_at" FROM "acomments"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acomments"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar DEFAULT NULL, "body" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "views" integer DEFAULT 0, "user_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_user_id" ON "aposts" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aposts" ("id","title","body","created_at","updated_at","views","user_id")
+                     SELECT "id","title","body","created_at","updated_at","views","user_id" FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar DEFAULT NULL, "body" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "views" integer DEFAULT 0, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_posts_on_user_id" ON "posts" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "posts" ("id","title","body","created_at","updated_at","views","user_id")
+                     SELECT "id","title","body","created_at","updated_at","views","user_id" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20231006093815)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20231006093814),
+(20231006093724),
+(20231006085223),
+(20231006074214),
+(20231006072629),
+(20231006065032),
+(20231006061929),
+(20231005185930);[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2023-10-06 18:05:02.041653', '2023-10-06 18:05:02.041656') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2023-10-06 18:05:02.043026' WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'e239f7c598ae10a814c2509b7ca5a7687322a1c6', '2023-10-06 18:05:02.044538', '2023-10-06 18:05:02.044539') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 10.240.2.100 at 2023-10-06 18:05:15 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 182)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 816)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5251)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 9588)
+
+
+Started GET "/posts" for 10.240.2.100 at 2023-10-06 18:05:17 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 767)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 194)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1750)
+Completed 200 OK in 11ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 5774)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 18:05:18 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms | Allocations: 1158)
+
+
+Started GET "/users/sign_in" for 10.240.2.100 at 2023-10-06 18:05:18 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 682)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 25.4ms | Allocations: 2879)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 3757)
+Completed 200 OK in 54ms (Views: 31.5ms | ActiveRecord: 0.4ms | Allocations: 19479)
+
+
+Started GET "/users/sign_up" for 10.240.2.100 at 2023-10-06 18:05:26 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 220)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1990)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 167)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2761)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 3934)
+
+
+Started POST "/users" for 10.240.2.100 at 2023-10-06 18:05:36 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anil.demir@aol.com", "name"=>"anil.demir", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anil.demir@aol.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "name", "views") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["email", "anil.demir@aol.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-10-06 18:05:36.477615"], ["updated_at", "2023-10-06 18:05:36.477615"], ["name", "anil.demir"], ["views", 0]]
+  [1m[36mTRANSACTION (43.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ubiquitous-orbit-qrxr6gjvv57247v-3000.app.github.dev/posts/new
+Completed 303 See Other in 316ms (ActiveRecord: 45.1ms | Allocations: 10332)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 18:05:36 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.7ms | Allocations: 1192)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1518)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 299)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2420)
+Completed 200 OK in 31ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 12518)
+
+
+Started POST "/posts" for 10.240.2.100 at 2023-10-06 18:05:41 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"First Post", "body"=>"First Post Body"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+  [1m[36mPost Create (4.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views", "user_id") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["title", "First Post"], ["body", "First Post Body"], ["created_at", "2023-10-06 18:05:41.614490"], ["updated_at", "2023-10-06 18:05:41.614490"], ["views", 0], ["user_id", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+Redirected to https://ubiquitous-orbit-qrxr6gjvv57247v-3000.app.github.dev/posts/1
+Completed 302 Found in 14ms (ActiveRecord: 5.0ms | Allocations: 3569)
+
+
+Started GET "/posts/1" for 10.240.2.100 at 2023-10-06 18:05:41 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.2ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:05:41.723180"], ["views", 1], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.8ms | Allocations: 1726)
+  Rendered comments/_form.html.erb (Duration: 1.0ms | Allocations: 1168)
+  Rendered posts/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3981)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4073)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 2.2ms | Allocations: 9921)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x0000000000da20>):
+    1: <%= form_with(model: [post, comment] ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 18:06:22 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.5ms | Allocations: 1004)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1292)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 671)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4437)
+Completed 200 OK in 25ms (Views: 6.6ms | ActiveRecord: 2.0ms | Allocations: 17720)
+
+
+Started GET "/posts" for 10.240.2.100 at 2023-10-06 18:06:40 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 3.7ms | Allocations: 1766)
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2664)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:21
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 850)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4306)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 4708)
+
+
+Started GET "/posts/1" for 10.240.2.100 at 2023-10-06 18:06:42 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:06:42.210846"], ["views", 2], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (17.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.0ms | Allocations: 555)
+  Rendered comments/_form.html.erb (Duration: 0.5ms | Allocations: 1197)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2548)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2640)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 18.4ms | Allocations: 8248)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x000000000133a8>):
+    1: <%= form_with(model: [post, comment] ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/1" for 10.240.2.100 at 2023-10-06 18:07:02 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.7ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:07:02.260902"], ["views", 3], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (15.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 5.8ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.5ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 7.9ms | Allocations: 8541)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 8634)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 18.7ms | Allocations: 19669)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000018b00>):
+    1: <%= form_with(model: [post, comment] ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/1" for 10.240.2.100 at 2023-10-06 18:07:18 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.1ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:07:19.013606"], ["views", 4], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (15.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 6.4ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.6ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 8539)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 8632)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 18.9ms | Allocations: 19690)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x0000000001e2a8>):
+    1: <%= form_with(model: [post, comment] ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/1" for 10.240.2.100 at 2023-10-06 18:07:21 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.7ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:07:21.972112"], ["views", 5], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (14.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 5.7ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.5ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 8539)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 8632)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 17.0ms | Allocations: 19689)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000023a78>):
+    1: <%= form_with(model: [post, comment] ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/1" for 10.240.2.100 at 2023-10-06 18:07:59 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.7ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:07:59.633182"], ["views", 6], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (15.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 7.0ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 0.8ms | Allocations: 1145)
+  Rendered posts/show.html.erb within layouts/application (Duration: 9.5ms | Allocations: 8541)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 8634)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 18.5ms | Allocations: 19659)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000029270>):
+    1: <%= form_with(model: [post, comment] ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/" for 10.240.0.113 at 2023-10-06 18:10:04 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 182)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:21
+  Rendered layouts/_navbar.html.erb (Duration: 27.5ms | Allocations: 19144)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 23607)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 0.4ms | Allocations: 27944)
+
+
+Started GET "/posts" for 10.240.0.113 at 2023-10-06 18:10:06 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 5.4ms | Allocations: 3469)
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 9893)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:21
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 854)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 11569)
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 0.6ms | Allocations: 14178)
+
+
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:10:07 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:10:07.981267"], ["views", 7], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.0ms | Allocations: 554)
+  Rendered comments/_form.html.erb (Duration: 1.5ms | Allocations: 1566)
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2954)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3046)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.3ms | Allocations: 10597)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x0000000000d660>):
+    1: <%= form_with(model: [post, comment] ) do |form| %>
+    2:   <div class="form-control">
+    3:     <%= form.rich_text_area :body %>
+    4:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+  
+app/views/comments/_form.html.erb:1
+app/views/posts/show.html.erb:13
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:10:32 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:10:32.542284"], ["views", 8], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (14.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 6.0ms | Allocations: 6429)
+  Rendered comments/_form.html.erb (Duration: 54319.9ms | Allocations: 72515)
+  Rendered posts/show.html.erb within layouts/application (Duration: 54327.6ms | Allocations: 80007)
+  Rendered layout layouts/application.html.erb (Duration: 54327.9ms | Allocations: 80104)
+Completed 500 Internal Server Error in 54360ms (ActiveRecord: 18.1ms | Allocations: 91172)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000012e30>):
+    1: 
+    2: <%= form_with(model: [post, comment] ) do |form| %>
+    3:   <div class="form-control">
+    4:     <%= form.rich_text_area :body %>
+    5:     <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+    6:   </div>
+  
+app/views/comments/_form.html.erb:3
+app/views/posts/show.html.erb:13
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:11:28 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:11:28.532423"], ["views", 9], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (26.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 6.5ms | Allocations: 6560)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.4ms | Allocations: 8517)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 8610)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 29.5ms | Allocations: 21220)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `comment' for #<ActionView::Base:0x00000000018588>):
+    10: </div>
+    11: 
+    12: <div class="container">
+    13:   <%= render "comments/form", post: @post, comment: comment %>
+    14:   <% @comments.each do |comment| %>
+    15:    <%= render "comments/comment", post: @post ,comment: comment %>
+    16:   <% end %>
+  
+app/views/posts/show.html.erb:13
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:12:12 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.5ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:12:12.343199"], ["views", 10], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (15.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 7.4ms | Allocations: 6430)
+  Rendered comments/_form.html.erb (Duration: 36.0ms | Allocations: 14499)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  Rendered posts/show.html.erb within layouts/application (Duration: 50.6ms | Allocations: 26020)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:21
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 1540)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 30128)
+Completed 200 OK in 99ms (Views: 59.1ms | ActiveRecord: 20.6ms | Allocations: 41196)
+
+
+Started POST "/posts/1/comments" for 10.240.0.113 at 2023-10-06 18:12:16 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CommentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"body"=>"<div>First</div>"}, "commit"=>"Submit", "post_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:35:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:8:in `create'
+  [1m[36mComment Create (1.2ms)[0m  [1m[32mINSERT INTO "comments" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["post_id", 1], ["user_id", 1], ["created_at", "2023-10-06 18:12:16.460413"], ["updated_at", "2023-10-06 18:12:16.460413"]]
+  ↳ app/controllers/comments_controller.rb:8:in `create'
+  [1m[36mActionText::RichText Create (0.2ms)[0m  [1m[32mINSERT INTO "action_text_rich_texts" ("name", "body", "record_type", "record_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "body"], ["body", "<div>First</div>"], ["record_type", "Comment"], ["record_id", 1], ["created_at", "2023-10-06 18:12:16.485725"], ["updated_at", "2023-10-06 18:12:16.485725"]]
+  ↳ app/controllers/comments_controller.rb:8:in `create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ?[0m  [["record_id", 1], ["record_type", "ActionText::RichText"], ["name", "embeds"]]
+  ↳ app/controllers/comments_controller.rb:8:in `create'
+  [1m[36mComment Update (0.1ms)[0m  [1m[33mUPDATE "comments" SET "updated_at" = ? WHERE "comments"."id" = ?[0m  [["updated_at", "2023-10-06 18:12:16.487724"], ["id", 1]]
+  ↳ app/controllers/comments_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:8:in `create'
+Redirected to https://ubiquitous-orbit-qrxr6gjvv57247v-3000.app.github.dev/posts/1
+Completed 302 Found in 45ms (ActiveRecord: 2.1ms | Allocations: 15310)
+
+
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:12:16 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.0ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:12:16.656124"], ["views", 11], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.4ms | Allocations: 558)
+  Rendered comments/_form.html.erb (Duration: 1.4ms | Allocations: 713)
+  [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 1.7ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.1ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.9ms | Allocations: 611)
+  Rendered comments/_comment.html.erb (Duration: 15.3ms | Allocations: 6188)
+  Rendered posts/show.html.erb within layouts/application (Duration: 21.2ms | Allocations: 8739)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 9610)
+Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 1.4ms | Allocations: 11929)
+
+
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:12:18 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.2ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:12:18.813938"], ["views", 12], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.0ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 1.5ms | Allocations: 707)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 0.7ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.3ms | Allocations: 288)
+  Rendered comments/_comment.html.erb (Duration: 5.4ms | Allocations: 3345)
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.2ms | Allocations: 5705)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6571)
+Completed 200 OK in 17ms (Views: 11.9ms | ActiveRecord: 1.6ms | Allocations: 8841)
+
+
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:12:20 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.1ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:12:20.070727"], ["views", 13], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.1ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 1.4ms | Allocations: 707)
+  [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 0.9ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.4ms | Allocations: 288)
+  Rendered comments/_comment.html.erb (Duration: 5.6ms | Allocations: 3345)
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.3ms | Allocations: 5705)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 6571)
+Completed 200 OK in 18ms (Views: 12.5ms | ActiveRecord: 1.5ms | Allocations: 8840)
+
+
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:12:21 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.1ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:12:21.072514"], ["views", 14], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.4ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 1.5ms | Allocations: 707)
+  [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 0.8ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.4ms | Allocations: 288)
+  Rendered comments/_comment.html.erb (Duration: 6.2ms | Allocations: 3344)
+  Rendered posts/show.html.erb within layouts/application (Duration: 11.9ms | Allocations: 5740)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 6606)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 1.5ms | Allocations: 8875)
+
+
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:12:21 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (7.2ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:12:21.723005"], ["views", 15], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.2ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 2.1ms | Allocations: 707)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 0.9ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.6ms | Allocations: 289)
+  Rendered comments/_comment.html.erb (Duration: 7.2ms | Allocations: 3346)
+  Rendered posts/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 5729)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 6595)
+Completed 200 OK in 27ms (Views: 15.9ms | ActiveRecord: 7.7ms | Allocations: 8864)
+
+
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 18:12:21 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:12:21.972733"], ["views", 16], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.4ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 4.4ms | Allocations: 707)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 0.8ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.6ms | Allocations: 289)
+  Rendered comments/_comment.html.erb (Duration: 8.3ms | Allocations: 3345)
+  Rendered posts/show.html.erb within layouts/application (Duration: 23.9ms | Allocations: 5693)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 6559)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 1.4ms | Allocations: 8828)
+
+
+Started GET "/posts/1" for 10.240.3.108 at 2023-10-06 18:14:36 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.0ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:14:36.183880"], ["views", 17], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.2ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 1.4ms | Allocations: 707)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 0.8ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.4ms | Allocations: 289)
+  Rendered comments/_comment.html.erb (Duration: 5.7ms | Allocations: 3353)
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 5722)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 6588)
+Completed 200 OK in 18ms (Views: 12.6ms | ActiveRecord: 1.4ms | Allocations: 8855)
+
+
+Started GET "/posts/1" for 10.240.3.108 at 2023-10-06 18:14:56 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:14:56.291634"], ["views", 18], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (14.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 7.2ms | Allocations: 6430)
+  Rendered comments/_form.html.erb (Duration: 2.1ms | Allocations: 1528)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  [1m[36mActionText::RichText Load (0.1ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:17
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.8ms | Allocations: 511)
+  Rendered comments/_comment.html.erb (Duration: 7.7ms | Allocations: 5636)
+  Rendered posts/show.html.erb within layouts/application (Duration: 22.9ms | Allocations: 17832)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 664)
+  Rendered layouts/_alerts.html.erb (Duration: 0.7ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 20962)
+Completed 200 OK in 61ms (Views: 28.4ms | ActiveRecord: 18.0ms | Allocations: 32025)
+
+
+Started GET "/posts/1" for 10.240.3.108 at 2023-10-06 18:15:05 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (5.1ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:15:06.132826"], ["views", 19], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 7.1ms | Allocations: 6430)
+  Rendered comments/_form.html.erb (Duration: 2.0ms | Allocations: 1528)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 1.4ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.1ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.9ms | Allocations: 511)
+  Rendered comments/_comment.html.erb (Duration: 10.0ms | Allocations: 6420)
+  Rendered posts/show.html.erb within layouts/application (Duration: 25.3ms | Allocations: 18619)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 664)
+  Rendered layouts/_alerts.html.erb (Duration: 0.8ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 21748)
+Completed 200 OK in 78ms (Views: 33.5ms | ActiveRecord: 24.9ms | Allocations: 32836)
+
+
+Started GET "/posts/1" for 10.240.1.100 at 2023-10-06 18:18:27 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.4ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:18:27.284081"], ["views", 20], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (27.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 15.6ms | Allocations: 6430)
+  Rendered comments/_form.html.erb (Duration: 2.3ms | Allocations: 1529)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 0.9ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.8ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.9ms | Allocations: 511)
+  Rendered comments/_comment.html.erb (Duration: 9.7ms | Allocations: 6424)
+  Rendered posts/show.html.erb within layouts/application (Duration: 35.9ms | Allocations: 18627)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 664)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 21760)
+Completed 200 OK in 92ms (Views: 40.0ms | ActiveRecord: 33.1ms | Allocations: 32826)
+
+
+Started GET "/posts/1" for 10.240.1.100 at 2023-10-06 18:18:29 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:18:29.696871"], ["views", 21], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.2ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 1.7ms | Allocations: 707)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  Rendered comments/_form.html.erb (Duration: 0.8ms | Allocations: 590)
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:18
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.6ms | Allocations: 288)
+  Rendered comments/_comment.html.erb (Duration: 6.9ms | Allocations: 3348)
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.1ms | Allocations: 5717)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 6583)
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 1.3ms | Allocations: 8852)
+
+
+Started GET "/posts/1" for 10.240.1.100 at 2023-10-06 18:18:51 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.7ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:18:51.954008"], ["views", 22], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (13.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 6.5ms | Allocations: 6430)
+  Rendered comments/_form.html.erb (Duration: 2.5ms | Allocations: 1529)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  [1m[36mActionText::RichText Load (0.1ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_form.html.erb:4
+  Rendered comments/_form.html.erb (Duration: 2.5ms | Allocations: 1371)
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.8ms | Allocations: 510)
+  Rendered comments/_comment.html.erb (Duration: 8.6ms | Allocations: 6199)
+  Rendered posts/show.html.erb within layouts/application (Duration: 22.6ms | Allocations: 18396)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 664)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 21529)
+Completed 200 OK in 57ms (Views: 26.9ms | ActiveRecord: 17.3ms | Allocations: 32607)
+
+
+Started GET "/posts/1" for 10.240.2.100 at 2023-10-06 18:22:23 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:22:23.592932"], ["views", 23], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (14.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 6.5ms | Allocations: 6430)
+  Rendered comments/_form.html.erb (Duration: 2.2ms | Allocations: 1529)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  [1m[36mActionText::RichText Load (0.1ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_form.html.erb:4
+  Rendered comments/_form.html.erb (Duration: 2.2ms | Allocations: 1369)
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.2ms | Allocations: 512)
+  Rendered comments/_comment.html.erb (Duration: 12.7ms | Allocations: 6230)
+  Rendered posts/show.html.erb within layouts/application (Duration: 26.4ms | Allocations: 18442)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 664)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 21575)
+Completed 200 OK in 63ms (Views: 31.5ms | ActiveRecord: 18.4ms | Allocations: 32624)
+
+
+Started GET "/posts/1" for 10.240.1.100 at 2023-10-06 18:30:10 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:30:10.443044"], ["views", 24], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 14.9ms | Allocations: 12205)
+  Rendered comments/_form.html.erb (Duration: 20.1ms | Allocations: 14364)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  [1m[36mActionText::RichText Load (0.1ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_form.html.erb:4
+  Rendered comments/_form.html.erb (Duration: 5.4ms | Allocations: 3495)
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 1.0ms | Allocations: 605)
+  Rendered comments/_comment.html.erb (Duration: 11.8ms | Allocations: 8722)
+  Rendered posts/show.html.erb within layouts/application (Duration: 57.0ms | Allocations: 42098)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 720)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 193.2ms | Allocations: 79697)
+Completed 200 OK in 233ms (Views: 195.3ms | ActiveRecord: 2.4ms | Allocations: 106815)
+
+
+Started GET "/posts/1" for 10.240.1.100 at 2023-10-06 18:30:12 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.0ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:30:12.562862"], ["views", 25], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.4ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 1.8ms | Allocations: 709)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_form.html.erb:4
+  Rendered comments/_form.html.erb (Duration: 3.7ms | Allocations: 1332)
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.5ms | Allocations: 289)
+  Rendered comments/_comment.html.erb (Duration: 7.0ms | Allocations: 3118)
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.8ms | Allocations: 5511)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6377)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 1.5ms | Allocations: 8673)
+
+
+Started GET "/posts/1" for 10.240.1.100 at 2023-10-06 18:30:13 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:66:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mPost Update (1.1ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 18:30:13.489597"], ["views", 26], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered posts/_post.html.erb (Duration: 1.1ms | Allocations: 552)
+  Rendered comments/_form.html.erb (Duration: 2.0ms | Allocations: 707)
+  [1m[36mComment Load (0.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? ORDER BY "comments"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:2
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_comment.html.erb:8
+  [1m[36mActionText::RichText Load (0.0ms)[0m  [1m[34mSELECT "action_text_rich_texts".* FROM "action_text_rich_texts" WHERE "action_text_rich_texts"."record_id" = ? AND "action_text_rich_texts"."record_type" = ? AND "action_text_rich_texts"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Comment"], ["name", "body"], ["LIMIT", 1]]
+  ↳ app/views/comments/_form.html.erb:4
+  Rendered comments/_form.html.erb (Duration: 1.8ms | Allocations: 1332)
+  Rendered /usr/local/rvm/gems/ruby-3.2.2/gems/actiontext-7.1.0/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 0.4ms | Allocations: 288)
+  Rendered comments/_comment.html.erb (Duration: 4.7ms | Allocations: 3117)
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.1ms | Allocations: 5489)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6355)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 1.5ms | Allocations: 8642)
+
+
