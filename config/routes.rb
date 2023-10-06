@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   get "/u/:id", to: "users#profile", as: :user
 
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   get "about", to: "pages#about", as: :about
 
   get "up" => "rails/health#show", as: :rails_health_check
