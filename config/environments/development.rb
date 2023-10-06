@@ -2,6 +2,10 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
 
+  # working in local temporary
+  config.action_controller.forgery_protection_origin_check = false
+  # end
+
   # from devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # end of devise 

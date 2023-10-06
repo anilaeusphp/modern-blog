@@ -18,17 +18,25 @@
         
       </ul>
       <ul style="list-style:none;">
+      <% if user_signed_in? %>
       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+            <%= current_user.name  %>
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end">
-            <li><%= link_to "New Post", new_post_path, class: 'dropdown-item' %></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><%= link_to "New Post", new_post_path, class: 'dropdown-item' , data: {"turbo": false} %></li>
+            <li><%= link_to "Edit Profile", edit_user_registration_path, class: "dropdown-item" , data: {"turbo": false} %></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><%= button_to "Logout", destroy_user_session_path, class: "dropdown-item", method: :delete ,data: {"turbo": false} %></li>          
+            
           </ul>
         </li>
+        <% else %>
+          <div class="d-flex justify-content-center gap-2">
+            <li><%= link_to "Sign In", new_user_session_path, class: "text-decoration-none text-blue-500 fw-bold" %></li>
+            <li><%= link_to "Sign Up", new_user_registration_path, class: "text-decoration-none text-blue-500 fw-bold" %></li>
+          </div>
+        <% end %>
         </ul>
     </div>
   </div>
