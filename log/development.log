@@ -610,3 +610,1689 @@ Processing by PostsController#create as TURBO_STREAM
 Completed 422 Unprocessable Entity in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 7828)
 
 
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:05:15 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 184)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 78.8ms | Allocations: 34536)
+Completed 200 OK in 96ms (Views: 82.0ms | ActiveRecord: 0.0ms | Allocations: 38597)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:05:20 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 4079)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 4328)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:05:20 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3039)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3287)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:05:21 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3039)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3287)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:05:21 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.5ms | Allocations: 207)
+  Rendered posts/index.html.erb within layouts/application (Duration: 37.3ms | Allocations: 10481)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 13347)
+Completed 200 OK in 55ms (Views: 44.1ms | ActiveRecord: 0.6ms | Allocations: 19838)
+
+
+Started GET "/about" for 10.240.4.70 at 2023-10-06 06:05:22 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3129)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3438)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:05:23 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 733)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3559)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 3810)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:05:23 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3034)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3281)
+
+
+Started GET "/about" for 10.240.4.70 at 2023-10-06 06:05:24 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3042)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3288)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:05:24 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 723)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3549)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 3796)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:05:24 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3054)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3300)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:05:48 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 750)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3576)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 3827)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:06:49 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 171)
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4127)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 294)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 18365)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 1.6ms | Allocations: 20066)
+
+
+Started GET "/posts/new" for 10.240.4.70 at 2023-10-06 06:07:10 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.7ms | Allocations: 1997)
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2277)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 5108)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 5455)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:07:11 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 733)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3559)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 3810)
+
+
+Started GET "/posts/new" for 10.240.4.70 at 2023-10-06 06:09:59 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 757)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 837)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3663)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3913)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:12:40 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.7ms | Allocations: 1201)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1486)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 15516)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 19322)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:12:41 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.0ms | Allocations: 753)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 833)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3658)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3905)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:12:47 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.1ms | Allocations: 1213)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1502)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 15695)
+Completed 200 OK in 36ms (Views: 25.9ms | ActiveRecord: 5.6ms | Allocations: 20122)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:12:48 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 747)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 827)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3652)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3899)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:12:48 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 762)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 842)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3667)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3914)
+
+
+Started GET "/" for 10.240.2.100 at 2023-10-06 06:13:29 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 184)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 78.4ms | Allocations: 35583)
+Completed 200 OK in 88ms (Views: 82.1ms | ActiveRecord: 0.0ms | Allocations: 39644)
+
+
+Started GET "/" for 10.240.2.100 at 2023-10-06 06:13:30 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3027)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3276)
+
+
+Started GET "/posts" for 10.240.2.100 at 2023-10-06 06:13:31 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 205)
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 10494)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 13336)
+Completed 200 OK in 28ms (Views: 19.6ms | ActiveRecord: 0.4ms | Allocations: 19828)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:13:32 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.1ms | Allocations: 1984)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2264)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 5089)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5437)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:14:26 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.5ms | Allocations: 1205)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1494)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 15740)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 1.6ms | Allocations: 20195)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:14:27 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 738)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 818)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3643)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3894)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:14:27 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.6ms | Allocations: 735)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 815)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3640)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3887)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:14:28 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 744)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 824)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3649)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3896)
+
+
+Started GET "/posts/new" for 10.240.2.100 at 2023-10-06 06:14:43 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.6ms | Allocations: 1192)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1481)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 291)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 15603)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 1.8ms | Allocations: 20006)
+
+
+Started GET "/posts" for 10.240.2.100 at 2023-10-06 06:14:45 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1313)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4144)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 4516)
+
+
+Started GET "/posts/1" for 10.240.2.100 at 2023-10-06 06:14:46 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 665)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3486)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 5996)
+
+
+Started GET "/posts/1/edit" for 10.240.2.100 at 2023-10-06 06:14:47 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.3ms | Allocations: 792)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1050)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3871)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.1ms | Allocations: 4509)
+
+
+Started GET "/posts" for 10.240.2.100 at 2023-10-06 06:14:50 +0000
+Cannot render console from 10.240.2.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 720)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3546)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 3793)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:16:10 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 171)
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4167)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 291)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 18284)
+Completed 200 OK in 25ms (Views: 19.7ms | ActiveRecord: 3.4ms | Allocations: 19984)
+
+
+Started GET "/posts/1" for 10.240.4.70 at 2023-10-06 06:16:10 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 664)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3485)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 4762)
+
+
+Started GET "/posts/1/edit" for 10.240.4.70 at 2023-10-06 06:16:12 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.5ms | Allocations: 1141)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1458)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4279)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 4914)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:16:13 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 723)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3595)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 3844)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:16:14 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3155)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3607)
+
+
+Started GET "/about" for 10.240.4.70 at 2023-10-06 06:16:14 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3120)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 3427)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:16:15 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 723)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3549)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 3796)
+
+
+Started GET "/about" for 10.240.4.70 at 2023-10-06 06:16:15 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3045)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3291)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:16:16 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3054)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3300)
+
+
+Started GET "/about" for 10.240.4.70 at 2023-10-06 06:16:16 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3042)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3288)
+
+
+Started GET "/posts" for 10.240.4.70 at 2023-10-06 06:16:16 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 729)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3555)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 3802)
+
+
+Started GET "/about" for 10.240.4.70 at 2023-10-06 06:16:17 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3027)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3273)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:16:17 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 3048)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3295)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "posts"[0m
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20231005185930)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2023-10-06 06:21:45.102384', '2023-10-06 06:21:45.102388') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '15f768ef66fe2e7f9725f8afe00f4db47a622def', '2023-10-06 06:21:45.104777', '2023-10-06 06:21:45.104778') RETURNING "key"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "posts"[0m
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20231005185930)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2023-10-06 06:21:45.196233', '2023-10-06 06:21:45.196235') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2023-10-06 06:21:45.198553' WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '15f768ef66fe2e7f9725f8afe00f4db47a622def', '2023-10-06 06:21:45.200667', '2023-10-06 06:21:45.200670') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddViewsToPosts (20231006061929)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "posts" ADD "views" integer DEFAULT 0[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231006061929') RETURNING "version"[0m
+  [1m[36mTRANSACTION (24.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/posts" for 10.240.2.255 at 2023-10-06 06:22:12 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2462)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 36418)
+Completed 200 OK in 94ms (Views: 77.3ms | ActiveRecord: 0.1ms | Allocations: 46471)
+
+
+Started GET "/posts/new" for 10.240.2.255 at 2023-10-06 06:22:14 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.0ms | Allocations: 2041)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2323)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 5148)
+Completed 200 OK in 23ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 15499)
+
+
+Started POST "/posts" for 10.240.2.255 at 2023-10-06 06:22:23 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"First Post", "body"=>"First Post"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+  [1m[36mPost Create (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["title", "First Post"], ["body", "First Post"], ["created_at", "2023-10-06 06:22:23.848956"], ["updated_at", "2023-10-06 06:22:23.848956"], ["views", 0]]
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+Redirected to https://ubiquitous-orbit-qrxr6gjvv57247v-3000.app.github.dev/posts/1
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms | Allocations: 3756)
+
+
+Started GET "/posts/1" for 10.240.2.255 at 2023-10-06 06:22:23 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 175)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1161)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3982)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 6499)
+
+
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/posts/1" for 10.240.2.255 at 2023-10-06 06:24:40 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1027)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 15266)
+Completed 200 OK in 23ms (Views: 16.4ms | ActiveRecord: 1.7ms | Allocations: 21032)
+
+
+Started GET "/posts/1" for 10.240.2.255 at 2023-10-06 06:25:25 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 1.5ms | Allocations: 205)
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1054)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 15059)
+Completed 200 OK in 37ms (Views: 29.4ms | ActiveRecord: 1.8ms | Allocations: 20780)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:52 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:52.904457"], ["views", 1], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 184)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1011)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 15250)
+Completed 200 OK in 44ms (Views: 15.6ms | ActiveRecord: 20.2ms | Allocations: 22835)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:53 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (1.0ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:53.644691"], ["views", 2], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 471)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3292)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 1.4ms | Allocations: 5324)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:54 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:54.456424"], ["views", 3], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 477)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3298)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 1.0ms | Allocations: 5315)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:54 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:54.965141"], ["views", 4], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 468)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3289)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 1.1ms | Allocations: 5306)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:55 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:55.394106"], ["views", 5], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 471)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3292)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 1.2ms | Allocations: 5306)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:55 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.7ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:55.717469"], ["views", 6], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 480)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3347)
+Completed 200 OK in 12ms (Views: 5.3ms | ActiveRecord: 1.1ms | Allocations: 5363)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:56 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:56.127765"], ["views", 7], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 492)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3357)
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 1.0ms | Allocations: 5372)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:56 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:56.433053"], ["views", 8], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 471)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3292)
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 1.2ms | Allocations: 5306)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:56 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:56.823732"], ["views", 9], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 468)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3289)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 1.1ms | Allocations: 5303)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:57 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (1.0ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:57.034110"], ["views", 10], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 27)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 472)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3293)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 1.3ms | Allocations: 5307)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:57 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:57.200919"], ["views", 11], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 478)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3299)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 1.0ms | Allocations: 5313)
+
+
+Started GET "/posts/1" for 10.240.0.222 at 2023-10-06 06:26:57 +0000
+Cannot render console from 10.240.0.222! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:26:57.377198"], ["views", 12], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 472)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3294)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.9ms | Allocations: 5308)
+
+
+Started GET "/posts/1" for 10.240.0.113 at 2023-10-06 06:28:43 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:28:43.231018"], ["views", 13], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (15.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 193)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1038)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 15322)
+Completed 200 OK in 40ms (Views: 14.4ms | ActiveRecord: 18.2ms | Allocations: 22725)
+
+
+Started GET "/posts/new" for 10.240.0.113 at 2023-10-06 06:28:44 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.6ms | Allocations: 1127)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1402)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4247)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4567)
+
+
+Started GET "/about" for 10.240.0.113 at 2023-10-06 06:28:45 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3150)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3644)
+
+
+Started GET "/posts/new" for 10.240.0.113 at 2023-10-06 06:28:47 +0000
+Cannot render console from 10.240.0.113! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 747)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 827)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3673)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3923)
+
+
+Started GET "/posts/new" for 10.240.4.70 at 2023-10-06 06:37:03 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 6.2ms | Allocations: 3404)
+  Rendered posts/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3842)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 344)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 37756)
+Completed 200 OK in 80ms (Views: 51.9ms | ActiveRecord: 0.4ms | Allocations: 57971)
+
+
+Started GET "/" for 10.240.4.70 at 2023-10-06 06:37:04 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3174)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3692)
+
+
+Started GET "/about" for 10.240.4.70 at 2023-10-06 06:37:05 +0000
+Cannot render console from 10.240.4.70! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3149)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/about" for 10.240.1.100 at 2023-10-06 06:40:36 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 97)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 375)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 14649)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 15576)
+
+
+Started GET "/about" for 10.240.1.100 at 2023-10-06 06:40:38 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3053)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3304)
+
+
+Started GET "/about" for 10.240.1.100 at 2023-10-06 06:40:44 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 375)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 14398)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 15318)
+
+
+Started GET "/about" for 10.240.1.100 at 2023-10-06 06:40:44 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3056)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3303)
+
+
+Started GET "/about" for 10.240.1.100 at 2023-10-06 06:41:29 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 375)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 14642)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 15567)
+
+
+Started GET "/about" for 10.240.3.108 at 2023-10-06 06:43:58 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 183)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 439)
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 35238)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 0.0ms | Allocations: 39587)
+
+
+Started GET "/about" for 10.240.3.108 at 2023-10-06 06:43:59 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3080)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3332)
+
+
+Started GET "/about" for 10.240.3.108 at 2023-10-06 06:44:00 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3047)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3298)
+
+
+Started GET "/posts" for 10.240.3.108 at 2023-10-06 06:44:00 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.4ms | Allocations: 241)
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 11745)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 14607)
+Completed 200 OK in 30ms (Views: 20.6ms | ActiveRecord: 0.4ms | Allocations: 21119)
+
+
+Started GET "/" for 10.240.3.108 at 2023-10-06 06:44:01 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 91)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3152)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3464)
+
+
+Started GET "/posts" for 10.240.3.108 at 2023-10-06 06:44:01 +0000
+Cannot render console from 10.240.3.108! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 733)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3579)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3833)
+
+
+Started GET "/posts" for 10.240.2.255 at 2023-10-06 06:46:34 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 1.4ms | Allocations: 202)
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 4507)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 330)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 168)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 19124)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 2.0ms | Allocations: 20847)
+
+
+Started GET "/posts" for 10.240.2.255 at 2023-10-06 06:46:35 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 742)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3662)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3914)
+
+
+Started GET "/posts/new" for 10.240.2.255 at 2023-10-06 06:46:42 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.4ms | Allocations: 2005)
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2286)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5213)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 5559)
+
+
+Started POST "/posts" for 10.240.2.255 at 2023-10-06 06:46:49 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Second Post", "body"=>"Second Post Body"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+  [1m[36mPost Create (1.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["title", "Second Post"], ["body", "Second Post Body"], ["created_at", "2023-10-06 06:46:49.377898"], ["updated_at", "2023-10-06 06:46:49.377898"], ["views", 0]]
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+  [1m[36mTRANSACTION (14.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+Redirected to https://ubiquitous-orbit-qrxr6gjvv57247v-3000.app.github.dev/posts/2
+Completed 302 Found in 20ms (ActiveRecord: 16.0ms | Allocations: 3767)
+
+
+Started GET "/posts/2" for 10.240.2.255 at 2023-10-06 06:46:49 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:46:49.524378"], ["views", 1], ["id", 2]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 729)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3646)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 1.1ms | Allocations: 7804)
+
+
+Started GET "/posts/2" for 10.240.1.100 at 2023-10-06 06:48:29 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:48:29.601189"], ["views", 2], ["id", 2]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (14.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.4ms | Allocations: 192)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1007)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 330)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 15594)
+Completed 200 OK in 41ms (Views: 17.0ms | ActiveRecord: 17.1ms | Allocations: 23031)
+
+
+Started GET "/posts" for 10.240.1.100 at 2023-10-06 06:48:33 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 918)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4037)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 4374)
+
+
+Started GET "/posts" for 10.240.1.100 at 2023-10-06 06:48:34 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 675)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3776)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 4024)
+
+
+Started GET "/posts" for 10.240.1.100 at 2023-10-06 06:48:34 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 675)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3794)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 4042)
+
+
+Started GET "/posts/new" for 10.240.1.100 at 2023-10-06 06:48:36 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 5.2ms | Allocations: 1121)
+  Rendered posts/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1396)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4323)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 4646)
+
+
+Started POST "/posts" for 10.240.1.100 at 2023-10-06 06:48:44 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Third Post", "body"=>"Third Post Body"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["title", "Third Post"], ["body", "Third Post Body"], ["created_at", "2023-10-06 06:48:44.257123"], ["updated_at", "2023-10-06 06:48:44.257123"], ["views", 0]]
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+Redirected to https://ubiquitous-orbit-qrxr6gjvv57247v-3000.app.github.dev/posts/3
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms | Allocations: 1895)
+
+
+Started GET "/posts/3" for 10.240.1.100 at 2023-10-06 06:48:44 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:48:44.326669"], ["views", 1], ["id", 3]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 527)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3444)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 1.1ms | Allocations: 5510)
+
+
+Started GET "/posts/3" for 10.240.1.100 at 2023-10-06 06:49:16 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.7ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:49:16.861717"], ["views", 2], ["id", 3]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (15.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1008)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 330)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 15603)
+Completed 200 OK in 51ms (Views: 25.7ms | ActiveRecord: 17.5ms | Allocations: 23035)
+
+
+Started GET "/posts" for 10.240.1.100 at 2023-10-06 06:49:18 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 1.0ms | Allocations: 29)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1052)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4171)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 4508)
+
+
+Started GET "/posts/new" for 10.240.1.100 at 2023-10-06 06:49:19 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.4ms | Allocations: 1135)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1410)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4337)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4660)
+
+
+Started POST "/posts" for 10.240.1.100 at 2023-10-06 06:49:26 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Fourth Post", "body"=>"Fourt Post Body"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "views") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["title", "Fourth Post"], ["body", "Fourt Post Body"], ["created_at", "2023-10-06 06:49:26.045885"], ["updated_at", "2023-10-06 06:49:26.045885"], ["views", 0]]
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+Redirected to https://ubiquitous-orbit-qrxr6gjvv57247v-3000.app.github.dev/posts/4
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms | Allocations: 1871)
+
+
+Started GET "/posts/4" for 10.240.1.100 at 2023-10-06 06:49:26 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 06:49:26.122207"], ["views", 1], ["id", 4]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 509)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3434)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 1.3ms | Allocations: 5499)
+
+
+Started DELETE "/posts/4" for 10.240.1.100 at 2023-10-06 06:49:28 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:54:in `destroy'
+  [1m[36mPost Destroy (0.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/posts_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:54:in `destroy'
+Redirected to https://ubiquitous-orbit-qrxr6gjvv57247v-3000.app.github.dev/posts
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms | Allocations: 1865)
+
+
+Started GET "/posts" for 10.240.1.100 at 2023-10-06 06:49:28 +0000
+Cannot render console from 10.240.1.100! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 810)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 3968)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 4221)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20231006065032)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231006065032') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/posts" for 10.240.2.255 at 2023-10-06 07:05:25 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 0.4ms | Allocations: 251)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 12006)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 345)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 70.1ms | Allocations: 47356)
+Completed 200 OK in 80ms (Views: 72.3ms | ActiveRecord: 0.4ms | Allocations: 53265)
+
+
+Started GET "/posts/new" for 10.240.2.255 at 2023-10-06 07:05:27 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.3ms | Allocations: 1979)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2262)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5235)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5590)
+
+
+Started GET "/posts/new" for 10.240.2.255 at 2023-10-06 07:05:58 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 1888)
+
+
+Started GET "/users/sign_in" for 10.240.2.255 at 2023-10-06 07:05:58 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 686)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.2ms | Allocations: 2821)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 340)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 17420)
+Completed 200 OK in 54ms (Views: 35.9ms | ActiveRecord: 4.1ms | Allocations: 27770)
+
+
+Started GET "/about" for 10.240.2.255 at 2023-10-06 07:06:00 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 94)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 159)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3373)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4073)
+
+
+Started GET "/" for 10.240.2.255 at 2023-10-06 07:06:00 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 126)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3232)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3543)
+
+
+Started GET "/posts" for 10.240.2.255 at 2023-10-06 07:06:01 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 0.4ms | Allocations: 201)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4148)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 7277)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.4ms | Allocations: 8284)
+
+
+Started GET "/posts/1" for 10.240.2.255 at 2023-10-06 07:06:02 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 07:06:02.687994"], ["views", 14], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (17.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 667)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3619)
+Completed 200 OK in 31ms (Views: 6.5ms | ActiveRecord: 18.6ms | Allocations: 8887)
+
+
+Started GET "/posts" for 10.240.2.255 at 2023-10-06 07:06:04 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 814)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3928)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 4193)
+
+
+Started GET "/posts/1" for 10.240.2.255 at 2023-10-06 07:06:04 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:65:in `set_post'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mPost Update (0.9ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "views" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2023-10-06 07:06:04.713306"], ["views", 15], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.4ms | Allocations: 27)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 474)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3397)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 1.2ms | Allocations: 5435)
+
+
+Started GET "/posts/1/edit" for 10.240.2.255 at 2023-10-06 07:06:05 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started GET "/users/sign_in" for 10.240.2.255 at 2023-10-06 07:06:05 +0000
+Cannot render console from 10.240.2.255! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 226)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1053)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3981)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4619)
+
+

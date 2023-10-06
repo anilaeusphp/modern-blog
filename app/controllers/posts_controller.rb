@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  skip_before_action :verify_authenticity_token
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_post, only: %i[ show edit update destroy ]
 
   # GET /posts or /posts.json
@@ -9,6 +9,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+    @post.update(views: @post.views + 1)
   end
 
   # GET /posts/new
