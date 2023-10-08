@@ -2,7 +2,7 @@
 <%= form_with(model: [post, comment] ) do |form| %>
   <div class="form-control">
     <%= form.rich_text_area :body %>
-    <%= form.submit "Submit", class: "btn btn-primary mt-2" %>
+    <%= form.submit submit_label, class: "btn btn-primary mt-2" %>
   </div>
 
 <% end %>
