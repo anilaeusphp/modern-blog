@@ -70,3 +70,5 @@ end
 gem "devise", "~> 4.9"
 
 gem "byebug", "~> 11.1"
+
+gem "noticed", "~> 1.6"
