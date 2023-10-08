@@ -15,8 +15,25 @@ export default class extends Controller {
     e.stopPropagation();
     const form = document.getElementById(e.params['form']);
     const comment = document.getElementById(e.params['body']);
+    const edit = document.getElementById(e.params['edit']);
     form.classList.toggle('d-none');
     comment.classList.toggle('d-none');
     
+    this.toggleEditButton(edit);
+    }
+
+    toggleEditButton(edit){
+      if(edit.innerText == "Edit"){
+        edit.innerText = "Cancel";
+        this.toggleEditButtonClass(edit);
+      }else{
+        edit.innerText = "Edit";
+        this.toggleEditButtonClass(edit);
+      }
+    }
+
+    toggleEditButtonClass(edit){
+      edit.classList.toggle("btn-secondary");
+      edit.classList.toggle("btn-warning");
     }
 }

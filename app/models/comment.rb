@@ -11,7 +11,7 @@ class Comment < ApplicationRecord
 
   private
   def notify_recipient
-    
+    CommentNotification.with(comment: self, post: post).deliver_later(post.user)
   end
 
   private

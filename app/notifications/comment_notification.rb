@@ -6,7 +6,7 @@
 class CommentNotification < Noticed::Base
   # Add your delivery methods
   #
-  # deliver_by :database
+  deliver_by :database
   # deliver_by :email, mailer: "UserMailer"
   # deliver_by :slack
   # deliver_by :custom, class: "MyDeliveryMethod"
@@ -17,11 +17,14 @@ class CommentNotification < Noticed::Base
 
   # Define helper methods to make rendering easier.
   #
-  # def message
-  #   t(".message")
-  # end
+  def message
+    @post = Post.find(params[:comment][:post_id])
+    @user = User.find(params[:comment][:user_id])
+    @comment = Comment.find(params[:comment][:id])
+    "#{@user.email} has comment on #{@post.title.truncate_words(10)}"
+  end
   #
-  # def url
-  #   post_path(params[:post])
-  # end
+  def url
+    post_path(params[:post])
+  end
 end
