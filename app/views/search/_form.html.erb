@@ -1,0 +1,5 @@
+<%= search_form_for(@q, url: search_path, method: :get, class: 'd-flex') do |form| %>
+  <%= form.search_field :title_or_body_or_user_email_or_user_name_cont, placeholder: "Search", class: "form-control me-2" %>
+    <!-- Here we say title or body or username or useremail should be contained case insensitive -->
+    <%= form.submit "Search", class: "btn btn-outline-success" %>
+<% end %>

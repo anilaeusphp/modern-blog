@@ -72,3 +72,6 @@ gem "devise", "~> 4.9"
 gem "byebug", "~> 11.1"
 
 gem "noticed", "~> 1.6"
+
+
+gem "ransack", "~> 3.1.0"
